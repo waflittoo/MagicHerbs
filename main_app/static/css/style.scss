@@ -1,0 +1,57 @@
+$light_green: #52B532;
+$green: #50A112;
+$dark_green: #265501;
+$light_gray: #DADADA;
+$dark_gray: #B0B0B0;
+$darkest_gray: #1E1E1E;
+$black: #000;
+$white: #fff;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.selection{
+    color: white;
+    text-decoration: none;
+}
+
+.link{
+    font-weight: 700;
+    color: $dark_green;
+}
+
+body{
+    .container{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        main{
+            width: 90%;
+            max-width: 1366px;
+            margin: 40px auto;
+        }
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+@import "header";
+@import "index";
+@import "products";
+@import "traveling";
+@import "footer";
+@import "legal";
+@import "contact_form";
+
+@import "responsive_header";
+@import "responsive_index";
+@import "responsive_travel";
+@import "responsive_legal";
+@import "responsive_footer";

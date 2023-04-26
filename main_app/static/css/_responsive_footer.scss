@@ -1,0 +1,39 @@
+@media screen and(max-width:900px) {
+    .container{
+        footer{
+            padding: 30px;
+            .footer-container{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:700px) {
+    .container{
+        footer{
+            .footer-container{
+                p{
+                    font-size: 16px;
+                }
+                a.legal.link{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:600px) {
+    .container{
+        footer{
+            height: 200px;
+            .footer-container{
+                height: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+            }
+        }
+    }
+}

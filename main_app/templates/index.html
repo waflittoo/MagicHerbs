@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Inicio{% endblock title %}
+
+{% block menu_items %}
+<li><a class="selection selected" href="{% url 'index' %}">Inicio</a></li>
+<li><a class="selection" href="{% url 'products' %}">Productos</a></li>
+<li><a class="selection" href="{% url 'travel'%}">Viajes y servicios</a></li>
+<li><a class="selection" href="{% url 'contact' %}">Contacto</a></li>
+<li><a class="selection" href="{% url 'legal' %}">Aviso Legal</a></li>
+{% endblock menu_items %}
+
+{% block menu_items_res %}
+<li><a class="selection selected" href="{% url 'index' %}">Inicio</a></li>
+<li><a class="selection" href="{% url 'products' %}">Productos</a></li>
+<li><a class="selection" href="{% url 'travel'%}">Viajes y servicios</a></li>
+<li><a class="selection" href="{% url 'contact' %}">Contacto</a></li>
+<li><a class="selection" href="{% url 'legal' %}">Aviso Legal</a></li>
+{% endblock menu_items_res %}
+
+
+{% block main %}
+<main class="index-main">
+    <div class="index-main-container main-container">
+        <div class="index-cards">
+            <div class="image-container">
+                <img src="{% static 'img/About.jpg' %}" alt="Dos personas dandose la mano" class="image">
+            </div>
+            <div class="text-container">
+                <h2 class="title">Quienes somos:</h2>
+                <p class="text">
+                    Somos una empresa con diferentes productos
+                    desde el entretenimiento hasta la compra y venta de productos variados
+                    Nuestro objetivo es hacerte sentir con la comodidad de poder comprar, vender <br>
+                    ¡O simplemente entretenerse!
+                </p>
+            </div>
+        </div>
+        <div class="index-cards">
+            <div class="image-container">
+                <img src="{% static 'img/Products.jpg' %}" alt="Dos personas dandose la mano" class="image">
+            </div>
+            <div class="text-container">
+                <h2 class="title">Productos:</h2>
+                <h3 class="sub_title">Algunos de nuestros productos y servicios son:</h3>
+                <p class="text">
+                    <span class="sub_title">Compra y venta de órganos:</span><br>
+                    ¡Porque no hay nada más preciado que estar vivo, por eso aquí puedes comprar y vender órganos vitales y no vitales!
+                </p>
+                <p class="text">
+                    <span class="sub_title">Viajes locales, nacionales, internacionales e interestelares:</span><br>
+                    Tanto si eres un excéntrico multimillonario como si eres un puto pobre asalariado que no le alcanza ni para viajar al otro lado de tu barrio, podrás gozar de numerosos servicios de bajo costo para viajes a corta distancia <span class="light-italic">(Si eres uno de esos pobres que no pueden salir ni a la esquina porque no les alcanza la plata)</span> o a larga distancia <span class="light-italic">(Para la gente pudiente que si tienen los recursos y que claro, son nuestro público objetivo)</span>
+                </p>
+                <p class="text">
+                    <span class="sub_title">Compra y venta de diferentes "Medicamentos naturales" a un precio sumamente económico</span>
+                </p>
+                <a class="text link" href="{% url 'products' %}">¡Y mucho más!</a>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock main %}

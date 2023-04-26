@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block title %}Productos{% endblock title %}
+
+{% block menu_items %}
+<li><a class="selection" href="{% url 'index' %}">Inicio</a></li>
+<li><a class="selection selected" href="{% url 'products' %}">Productos</a></li>
+<li><a class="selection" href="{% url 'travel'%}">Viajes y servicios</a></li>
+<li><a class="selection" href="{% url 'contact' %}">Contacto</a></li>
+<li><a class="selection" href="{% url 'legal' %}">Aviso Legal</a></li>
+{% endblock menu_items %}
+
+{% block menu_items_res %}
+<li><a class="selection" href="{% url 'index' %}">Inicio</a></li>
+<li><a class="selection selected" href="{% url 'products' %}">Productos</a></li>
+<li><a class="selection" href="{% url 'travel'%}">Viajes y servicios</a></li>
+<li><a class="selection" href="{% url 'contact' %}">Contacto</a></li>
+<li><a class="selection" href="{% url 'legal' %}">Aviso Legal</a></li>
+{% endblock menu_items_res %}
+
+{% block main %}
+<main class="products-main">
+    <div class="products-main-container main-container">
+        <div class="cards-container" id="cardsContainer">
+            {% for product in product_list %}
+                <div class="card">
+                    <div class="image-container">
+                        <img src="{{product.image.url}}" alt="{{product.image_alt}}">
+                    </div>
+                    <div class="text-container">
+                        <h2 class="title">{{product.name}}</h2>
+                        <h3 class="price">{{product.price}}</h3>
+                        <p class="desc">{{product.description}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% endblock main %}

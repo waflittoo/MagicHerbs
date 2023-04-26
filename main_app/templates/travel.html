@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block title %}Productos{% endblock title %}
+
+{% block menu_items %}
+<li><a class="selection" href="{% url 'index' %}">Inicio</a></li>
+<li><a class="selection" href="{% url 'products' %}">Productos</a></li>
+<li><a class="selection selected" href="{% url 'travel'%}">Viajes y servicios</a></li>
+<li><a class="selection" href="{% url 'contact' %}">Contacto</a></li>
+<li><a class="selection" href="{% url 'legal' %}">Aviso Legal</a></li>
+{% endblock menu_items %}
+
+{% block menu_items_res %}
+<li><a class="selection" href="{% url 'index' %}">Inicio</a></li>
+<li><a class="selection" href="{% url 'products' %}">Productos</a></li>
+<li><a class="selection selected" href="{% url 'travel'%}">Viajes y servicios</a></li>
+<li><a class="selection" href="{% url 'contact' %}">Contacto</a></li>
+<li><a class="selection" href="{% url 'legal' %}">Aviso Legal</a></li>
+{% endblock menu_items_res %}
+
+{% block main %}
+<main class="travel-main">
+    <div class="travel-main-container">
+        <div class="title-container">
+            <h1>Viajes:</h1>
+            <p>
+                Viajar es algo fascinante <br>
+                y más si no se es pobre, por eso aquí tenemos diferentes destinos de alta demanda,<br>
+                para que puedas visitarlos con las personas que más quieres.
+            </p>
+            <p class="non-included">Algunos de estos viajes no tienen incluido en el precio el retorno del usuario al planeta tierra (Se vende por separado)</p>
+
+        </div>
+
+        <div class="destiny-cards" id="destinyCards">
+            <p>Algunos de nuestros viajes son:</p>
+            {% for destiny in travel_list %}
+                <div class="destiny">
+                    <div class="image-container">
+                        <img src="{{destiny.image.url}}" alt="{{destiny.image_alt}}">
+                    </div>
+                    <div class="text-container">
+                        <h2>{{destiny.name}}</h2>
+                        <h3>{{destiny.price}}</h3>
+                        <p>{{destiny.short_description}}</p>
+                        <a class="link" href="#">¡Saber mas!</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% endblock main %}
+

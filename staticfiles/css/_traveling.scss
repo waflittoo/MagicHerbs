@@ -1,0 +1,68 @@
+.container{
+    .travel-main{
+        .travel-main-container{
+            .title-container{
+                width: 90%;
+                margin: auto;
+                margin-bottom: 50px;
+                h1{
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+                p.non-included{
+                    font-weight: lighter;
+                    font-style: italic;
+                    font-size: 15px;
+                }
+            }
+            .destiny-cards{
+                width: 90%;
+                margin: auto;
+                p{
+                    font-size: 30px;
+                }
+                .destiny{
+                    display: flex;
+                    justify-content: space-between;
+                    background: $light_gray;
+                    margin: 20px 0;
+                    padding: 20px;
+                    border-radius: 5px;
+                    .image-container{
+                        border-radius: 5px;
+                        width: 300px;
+                        height: 300px;
+                        margin-right: 40px;
+                        padding: 10px;
+                        background: $dark_gray;
+                        img{
+                        border-radius: 5px;
+                        object-fit: cover;
+                        height: 100%;
+                        }
+                    }
+                    .text-container{
+                        font-size: 20px;
+                        h2{
+                            font-size: 30px;
+                        }
+                        h3{
+                            padding-bottom: 15px;
+                            font-weight: 500;
+                        }
+                        p{
+                            font-size: 16px;
+                            padding-bottom: 80px;
+                        }
+                        a.link{
+                            font-weight: 700;
+                            color: $dark_green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

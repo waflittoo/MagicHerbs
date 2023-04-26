@@ -1,0 +1,31 @@
+.container{
+    .products-main{
+        .main-container{
+            .cards-container{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .card{
+                    padding: 20px;
+                    width: 355px;
+                    background: $light_gray;
+                    border-radius: 5px;
+                    margin: 20px;
+                    // margin-bottom: 50px;
+                    .image-container{
+                        margin-bottom: 40px;
+                        background: $dark_gray;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .text-container{
+                        .price{
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
