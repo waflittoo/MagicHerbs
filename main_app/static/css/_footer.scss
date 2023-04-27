@@ -2,6 +2,9 @@
     footer{
         background: $darkest_gray;
         padding: 50px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
         .footer-container{
             width: 80%;
             display: flex;
