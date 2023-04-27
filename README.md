@@ -13,3 +13,5 @@ Todo lo mencionado en Magic Herbs es puro humor y no se busca ofender ni dañar 
 
 ## Proyecto de práctica
 Esta página web no es una tienda real, es solo un proyecto de práctica para mejorar nuestro conocimiento en el desarrollo web. No ofrecemos ningún producto o servicio real, y no somos responsables de cualquier uso que se haga del contenido aquí presentado.
+
+# Al acceder y utilizar nuestra página web, usted acepta estos términos y condiciones. Si no está de acuerdo con ellos, le pedimos que no utilice esta página web. Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento y sin previo aviso.
