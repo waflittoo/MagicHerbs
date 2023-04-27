@@ -15,12 +15,18 @@
   color: #265501;
 }
 
-body .container {
+html {
+  min-height: 100%;
+  position: relative;
+}
+html body {
+  margin-bottom: 200px;
+}
+html body .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
-body .container main {
+html body .container main {
   width: 90%;
   max-width: 1366px;
   margin: 40px auto;
@@ -233,9 +239,58 @@ body .container main {
   color: #265501;
 }
 
+.container .contact-main .form-container form {
+  width: 60%;
+  padding: 30px;
+  border-radius: 10px;
+  background: #DADADA;
+}
+.container .contact-main .form-container form .form-group {
+  display: flex;
+  justify-content: space-between;
+}
+.container .contact-main .form-container form .form-group .label {
+  margin: 10px 0;
+  display: block;
+}
+.container .contact-main .form-container form .form-group .input {
+  padding: 10px 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  outline: 2px solid #50A112;
+  border: none;
+  display: inline-block;
+}
+.container .contact-main .form-container form .form-group .group {
+  width: 45%;
+}
+.container .contact-main .form-container form .form-group .message-group textarea {
+  display: inline;
+  resize: none;
+  height: calc(100% - 39px);
+}
+.container .contact-main .form-container form .btn-group {
+  margin-top: 20px;
+}
+.container .contact-main .form-container form .btn-group .btn {
+  padding: 10px 25px;
+  border-radius: 5px;
+  background: #265501;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.container .contact-main .form-container .text {
+  margin: 20px 0;
+}
+
 .container footer {
   background: #1E1E1E;
   padding: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .container footer .footer-container {
   width: 80%;
@@ -282,58 +337,6 @@ body .container main {
 }
 .container .legal-main p:last-child {
   margin-bottom: 0px;
-}
-
-.container .contact-main .form-container form {
-  width: 70%;
-  padding: 50px;
-  border-radius: 5px;
-  display: flex;
-  background: #DADADA;
-  justify-content: space-between;
-}
-.container .contact-main .form-container form .input:focus {
-  outline: none;
-}
-.container .contact-main .form-container form .form-group {
-  width: 50%;
-}
-.container .contact-main .form-container form .form-group .input.normal {
-  width: 90%;
-  margin: 10px 0;
-  padding: 10px 10px;
-  border-radius: 5px;
-  display: inline-block;
-  border: 2px solid #265501;
-  font-size: 20px;
-}
-.container .contact-main .form-container form .form-group .btn {
-  display: block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  background: #265501;
-  color: #fff;
-  font-weight: 700;
-}
-.container .contact-main .form-container form .form-group .btn:hover {
-  cursor: pointer;
-  background: #50A112;
-}
-.container .contact-main .form-container form .form-group .label {
-  font-size: 20px;
-}
-.container .contact-main .form-container form .message-group {
-  width: 50%;
-}
-.container .contact-main .form-container form .message-group .input.message {
-  width: 100%;
-  height: 100%;
-  resize: none;
-  padding: 10px 10px;
-  border-radius: 5px;
-  border: 2px solid #265501;
-  font-size: 20px;
 }
 
 @media screen and (max-width: 1025px) {
@@ -496,9 +499,29 @@ body .container main {
     width: 100%;
   }
 }
-@media screen and (max-width: 1200px) {
-  .container .legal-main {
-    width: 90%;
+@media screen and (max-width: 950px) {
+  .container .contact-main .form-container form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .contact-main .form-container form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container .contact-main .form-container form .form-group {
+    flex-direction: column;
+  }
+  .container .contact-main .form-container form .form-group .input {
+    max-width: none;
+  }
+  .container .contact-main .form-container form .form-group .group {
+    width: 100%;
+  }
+  .container .contact-main .form-container form .form-group .message-group {
+    margin-top: 20px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -526,6 +549,11 @@ body .container main {
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container .legal-main {
+    width: 90%;
   }
 }
 
