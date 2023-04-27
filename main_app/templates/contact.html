@@ -25,18 +25,25 @@
         <div class="form-container">
             <form action="" method="post">
                 <div class="form-group">
-                    <label for="userName" class="label">Nombre:</label>
-                    <input type="text" name="userName" id="userName" placeholder="Nombre" class="input normal">
-                    <label for="email" class="label">Correo:</label>
-                    <input type="email" name="email" id="email" placeholder="Correo" class="input normal">
+                    <div class="group user-email-group">
+                        <label for="userName" class="label">Nombre:</label>
+                        <input type="text" name="userName" id="userName" placeholder="Nombre" class="input">
+                        <label for="email" class="label">Correo:</label>
+                        <input type="email" name="email" id="email" placeholder="Correo" class="input">
+                    </div>
+                    <div class="group message-group">
+                        <label for="message" class="label">Mensaje:</label>
+                        <textarea name="message" id="message" placeholder="Mensaje" class="input"></textarea>
+                    </div>
+                </div>
+                <div class="btn-group">
                     <input type="submit" value="Enviar" class="btn">
                 </div>
-                <div class="message-group">
-                    <textarea name="message" id="message" placeholder="Mensaje" class="input message"></textarea>
-                </div>
             </form>
-            <p>Nos pondremos en contacto contigo lo mas pronto posible!</p>
-            <h6>(<i>Este no es un formulario real, Por favor abstenerse de llenarlo</i>)</h6>
+            <div class="text">
+                <p>Nos pondremos en contacto contigo lo mas pronto posible!</p>
+                <h6>(<i>Este no es un formulario real, Por favor abstenerse de llenarlo</i>)</h6>
+            </div>
         </div>
     </div>
 </main>
