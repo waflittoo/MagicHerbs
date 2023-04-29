@@ -10,6 +10,12 @@ staticfiles/img/travel/*.jpeg
 staticfiles/img/products/*.png
 staticfiles/img/products/*.jpg
 staticfiles/img/products/*.jpeg
+main_app/static/img/travel/*.png
+main_app/static/img/travel/*.jpg
+main_app/static/img/travel/*.jpeg
+main_app/static/img/products/*.png
+main_app/static/img/products/*.jpg
+main_app/static/img/products/*.jpeg
 tmp.txt
 
 ### Python ###
