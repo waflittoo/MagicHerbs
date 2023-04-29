@@ -1,23 +1,26 @@
-
 @media screen and(max-width:1025px) {
-    .container{
-        header{
-            .menu-container{
-                ul{
-                    width: 70%;
+    body {
+        .container {
+            header {
+                .menu-container {
+                    ul {
+                        width: 70%;
+                    }
                 }
             }
         }
     }
 }
 
-@media screen and (max-width:900px){
-    .container{
-        header{
-            .header-container{
-                .logo-container{
-                    img{
-                        width: 150px;
+@media screen and (max-width:900px) {
+    body {
+        .container {
+            header {
+                .header-container {
+                    .logo-container {
+                        img {
+                            width: 150px;
+                        }
                     }
                 }
             }
@@ -26,101 +29,119 @@
 }
 
 @media screen and(max-width:750px) {
-    .container{
-        header{
-            .menu-container{
-                ul{
-                    width: 90%;
+    body {
+        .container {
+            header {
+                .menu-container {
+                    ul {
+                        width: 90%;
+                    }
                 }
             }
         }
     }
 }
 
-@media screen and (max-width:660px){
-    .container{
-        header{
-            .header-container{
-                .title-container{
-                    .title{
-                        a{
-                            h1{
-                                font-size: 30px;
-                            }
-                            p{
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }
-                .logo-container{
-                    display: none;
-                }
-            }
-            
-            .menu-container{
-                .menu-header-container{
-                    display: block;
-                    .menu-btn{
-                        width: 35px;
-                        height: 35px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-                        &:hover{
-                            cursor: pointer;
-                        }
-                        .menu-style{
-                            width: 100%;
-                            height: 6px;
-                            background: $white;
-                            border-radius: 50px;
-                        }
-                    }
-                    .menu-container-dropdown{
-                        background: $dark_green;
-                        top: 215px;
-                        left: 0;
-                        position: absolute;
-                        padding-bottom: 20px;
-                        width: 100%;
-                        ul{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-around;
-                            text-align: center;
-                            width: 100%;
-                            li{
-                                display: block;
-                                a{
-                                    padding: 10px;
+@media screen and (max-width:660px) {
+    body {
+        .container {
+            header {
+                .header-container {
+                    .title-container {
+                        .title {
+                            a {
+                                h1 {
+                                    font-size: 30px;
+                                }
+
+                                p {
+                                    font-size: 14px;
                                 }
                             }
                         }
                     }
-                    .menu-hidden{
+
+                    .logo-container {
                         display: none;
                     }
                 }
-                ul{
-                    display: none;
+
+                .menu-container {
+                    .menu-header-container {
+                        display: block;
+
+                        .menu-btn {
+                            width: 35px;
+                            height: 35px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+
+                            .menu-style {
+                                width: 100%;
+                                height: 6px;
+                                background: $white;
+                                border-radius: 50px;
+                            }
+                        }
+
+                        .menu-container-dropdown {
+                            background: $dark_green;
+                            top: 215px;
+                            left: 0;
+                            position: absolute;
+                            padding-bottom: 20px;
+                            width: 100%;
+
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                                text-align: center;
+                                width: 100%;
+
+                                li {
+                                    display: block;
+
+                                    a {
+                                        padding: 10px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .menu-hidden {
+                            display: none;
+                        }
+                    }
+
+                    ul {
+                        display: none;
+                    }
                 }
             }
         }
     }
 }
 
-@media screen and (max-width:550px){
-    .container{
-        header{
-            .header-container{
-                .logo-container{
-                    display: none;
+@media screen and (max-width:550px) {
+    body {
+        .container {
+            header {
+                .header-container {
+                    .logo-container {
+                        display: none;
+                    }
                 }
-            }
-            .menu-container{
-                ul{
-                    width:100%;
+
+                .menu-container {
+                    ul {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -128,15 +149,15 @@
 }
 
 @media screen and(max-width:515px) {
-    .container{
-        header{
-            .menu-container{
-                ul{
-                    display: none;
+    body {
+        .container {
+            header {
+                .menu-container {
+                    ul {
+                        display: none;
+                    }
                 }
             }
         }
     }
 }
-
-

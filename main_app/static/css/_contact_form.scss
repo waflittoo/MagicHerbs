@@ -1,52 +1,54 @@
-.container{
-    .contact-main{
-        .form-container{
-            form{
-                width: 60%;
-                padding: 30px;
-                border-radius: 10px;
-                background: $light_gray;
-                .form-group{
-                    display: flex;
-                    justify-content: space-between;
-                    .label{
-                        margin: 10px 0;
-                        display: block;
+body{
+    .container{
+        .contact-main{
+            .form-container{
+                form{
+                    width: 60%;
+                    padding: 30px;
+                    border-radius: 10px;
+                    background: $light_gray;
+                    .form-group{
+                        display: flex;
+                        justify-content: space-between;
+                        .label{
+                            margin: 10px 0;
+                            display: block;
+                        }
+                        .input{
+                            padding: 10px 10px;
+                            width: 100%;
+                            max-width: 300px;
+                            border-radius: 5px;
+                            outline: 2px solid $green;
+                            border: none;
+                            display: inline-block;
+                        }
+                        .group{
+                            width: 45%;
+                        }
+                        .message-group{
+                            textarea{
+                                display: inline;
+                                resize: none;
+                                height: calc(100% - 39px);
+                            }
+                        }
                     }
-                    .input{
-                        padding: 10px 10px;
-                        width: 100%;
-                        max-width: 300px;
-                        border-radius: 5px;
-                        outline: 2px solid $green;
-                        border: none;
-                        display: inline-block;
-                    }
-                    .group{
-                        width: 45%;
-                    }
-                    .message-group{
-                        textarea{
-                            display: inline;
-                            resize: none;
-                            height: calc(100% - 39px);
+                    .btn-group{
+                        margin-top: 20px;
+                        .btn{
+                            padding: 10px 25px;
+                            border-radius: 5px;
+                            background: $dark_green;
+                            color: $white;
+                            border: none;
+                            cursor: pointer;
                         }
                     }
                 }
-                .btn-group{
-                    margin-top: 20px;
-                    .btn{
-                        padding: 10px 25px;
-                        border-radius: 5px;
-                        background: $dark_green;
-                        color: $white;
-                        border: none;
-                        cursor: pointer;
-                    }
+                .text{
+                    margin: 20px 0;
                 }
-            }
-            .text{
-                margin: 20px 0;
             }
         }
     }

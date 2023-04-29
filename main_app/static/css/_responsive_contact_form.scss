@@ -1,9 +1,11 @@
 @media screen and (max-width:950px) {
-    .container{
-        .contact-main{
-            .form-container{
-                form{
-                    width: 80%;
+    body {
+        .container {
+            .contact-main {
+                .form-container {
+                    form {
+                        width: 80%;
+                    }
                 }
             }
         }
@@ -11,11 +13,13 @@
 }
 
 @media screen and (max-width:600px) {
-    .container{
-        .contact-main{
-            .form-container{
-                form{
-                    width: 100%;
+    body {
+        .container {
+            .contact-main {
+                .form-container {
+                    form {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -23,21 +27,26 @@
 }
 
 @media screen and (max-width:500px) {
-    .container{
-        .contact-main{
-            .form-container{
-                form{
-                    .form-group{
-                        flex-direction: column;
-                        .input{
-                            max-width: none;
-                        }
-                        .group{
-                            width: 100%;
-                        }
-                        .message-group{
-                            margin-top: 20px;
-                            height: 200px;
+    body {
+        .container {
+            .contact-main {
+                .form-container {
+                    form {
+                        .form-group {
+                            flex-direction: column;
+
+                            .input {
+                                max-width: none;
+                            }
+
+                            .group {
+                                width: 100%;
+                            }
+
+                            .message-group {
+                                margin-top: 20px;
+                                height: 200px;
+                            }
                         }
                     }
                 }

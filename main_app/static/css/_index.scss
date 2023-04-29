@@ -1,48 +1,60 @@
-.container{
-    .index-main{
-        width: 90%;
-        max-width: 1366px;
-        margin: auto;
-        padding: 40px;
-        .index-main-container{
-            .index-cards{
-                width: 80%;
-                margin: 40px auto;
-                display: flex;
-                background: $light_gray;
-                margin-bottom: 40px;
-                padding: 20px;
-                border-radius: 5px;
-                .image-container{
-                    margin-right: 20px;
-                    .image{
-                        border: 10px solid $dark_gray;
-                        border-radius: 5px;
-                        width: 100%;
-                        max-width: 250px;
+body {
+    .container {
+        .index-main {
+            width: 90%;
+            max-width: 1366px;
+            margin: auto;
+            padding: 40px;
+
+            .index-main-container {
+                .index-cards {
+                    width: 80%;
+                    margin: 40px auto;
+                    display: flex;
+                    background: $light_gray;
+                    margin-bottom: 40px;
+                    padding: 20px;
+                    border-radius: 5px;
+
+                    .image-container {
+                        margin-right: 20px;
+
+                        .image {
+                            border: 10px solid $dark_gray;
+                            border-radius: 5px;
+                            width: 100%;
+                            max-width: 250px;
+                        }
                     }
-                }
-                .text-container{
-                    width: 60%;
-                    .title{
-                        margin-bottom: 20px;
-                    }
-                    h3{
-                        font-weight: 500;
-                    }
-                    .text{
-                        margin-bottom: 20px;
-                        .sub_title{
+
+                    .text-container {
+                        width: 60%;
+
+                        .title {
+                            margin-bottom: 20px;
+                        }
+
+                        h3 {
                             font-weight: 500;
                         }
-                        .light-italic{
-                            font-weight: 300;
-                            font-style: italic;
+
+                        .text {
+                            margin-bottom: 20px;
+
+                            .sub_title {
+                                font-weight: 500;
+                            }
+
+                            .light-italic {
+                                font-weight: 300;
+                                font-style: italic;
+                            }
                         }
-                    }
-                    a.text.link{
-                        color: $dark_green;
-                        font-weight: 700;
+
+                        a.text.link {
+                            color: $dark_green;
+                            font-weight: 700;
+                        }
                     }
                 }
             }
