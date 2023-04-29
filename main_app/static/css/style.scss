@@ -8,32 +8,36 @@ $black: #000;
 $white: #fff;
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-.selection{
+.selection {
     color: white;
     text-decoration: none;
 }
 
-.link{
+.link {
     font-weight: 700;
-    color: $dark_green;
+    color: $green;
+    cursor: pointer;
 }
 
-html{
+html {
     min-height: 100%;
     position: relative;
-    body{
+
+    body {
         margin-bottom: 200px;
-        .container{
+
+        .container {
             display: flex;
             flex-direction: column;
-            main{
+
+            main {
                 width: 90%;
                 max-width: 1366px;
                 margin: 40px auto;
@@ -42,13 +46,28 @@ html{
     }
 }
 
-.hidden{
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: $dark_green;
+    color: $white;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
     display: none;
 }
 
 @import "header";
 @import "index";
 @import "products";
+@import "product_page";
 @import "traveling";
 @import "contact_form";
 @import "footer";
