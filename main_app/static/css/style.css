@@ -182,6 +182,8 @@ body .container .products-main .main-container .cards-container .card {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  color: #000;
+  text-decoration: none;
 }
 body .container .products-main .main-container .cards-container .card .image-container {
   flex: 1;

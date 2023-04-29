@@ -1,28 +1,57 @@
-.container{
-    .products-main{
-        .main-container{
-            .cards-container{
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                .card{
-                    padding: 20px;
-                    width: 355px;
-                    background: $light_gray;
-                    border-radius: 5px;
-                    margin: 20px;
-                    color: #0000;
-                    text-decoration: none;
-                    .image-container{
-                        margin-bottom: 40px;
-                        background: $dark_gray;
-                        img{
-                            width: 100%;
+body {
+    .container {
+        .products-main {
+            .main-container {
+                .cards-container {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    .card {
+                        padding: 20px;
+                        width: 355px;
+                        background: $light_gray;
+                        border-radius: 5px;
+                        margin: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        color: #000;
+                        text-decoration: none;
+
+                        .image-container {
+                            flex: 1;
+                            margin-bottom: 40px;
+                            background: $dark_gray;
+
+                            img {
+                                width: 100%;
+                            }
                         }
-                    }
-                    .text-container{
-                        .price{
-                            margin-bottom: 20px;
+
+                        .flex-container {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            .text-container {
+                                .price {
+                                    margin-bottom: 20px;
+                                }
+                            }
+
+                            .btn-container {
+                                .get_btn {
+                                    display: inline-block;
+                                    background: $dark_green;
+                                    color: $white;
+                                    margin: 20px 0;
+                                    margin-bottom: 0;
+                                    padding: 15px 20px;
+                                    border-radius: 5px;
+                                    text-decoration: none;
+                                }
+                            }
                         }
                     }
                 }

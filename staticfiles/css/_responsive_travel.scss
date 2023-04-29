@@ -1,14 +1,17 @@
-@media screen and(max-width:800px){
-    .container{
-        .travel-main{
-            .travel-main-container{
-                .destiny-cards{
-                    .destiny{
-                        overflow: scroll;
-                        flex-direction: column;
-                        .image-container{
-                            margin-right: 0;
-                            margin-bottom: 20px;
+@media screen and(max-width:800px) {
+    body {
+        .container {
+            .travel-main {
+                .travel-main-container {
+                    .destiny-cards {
+                        .destiny {
+                            overflow: scroll;
+                            flex-direction: column;
+
+                            .image-container {
+                                margin-right: 0;
+                                margin-bottom: 20px;
+                            }
                         }
                     }
                 }
@@ -17,16 +20,19 @@
     }
 }
 
-@media screen and(max-width:560px){
-    .container{
-        .travel-main{
-            .travel-main-container{
-                .destiny-cards{
-                    .destiny{
-                        flex-direction: column;
-                        .image-container{
-                            margin: auto;
-                            margin-bottom: 20px;
+@media screen and(max-width:560px) {
+    body {
+        .container {
+            .travel-main {
+                .travel-main-container {
+                    .destiny-cards {
+                        .destiny {
+                            flex-direction: column;
+
+                            .image-container {
+                                margin: auto;
+                                margin-bottom: 20px;
+                            }
                         }
                     }
                 }
@@ -35,16 +41,19 @@
     }
 }
 
-@media screen and(max-width:450px){
-    .container{
-        .travel-main{
-            .travel-main-container{
-                .destiny-cards{
-                    .destiny{
-                        .image-container{
-                            width: 100%;
-                            img{
+@media screen and(max-width:450px) {
+    body {
+        .container {
+            .travel-main {
+                .travel-main-container {
+                    .destiny-cards {
+                        .destiny {
+                            .image-container {
                                 width: 100%;
+
+                                img {
+                                    width: 100%;
+                                }
                             }
                         }
                     }
