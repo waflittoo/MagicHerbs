@@ -1,0 +1,74 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block title %}Nombre del producto{% endblock title %}
+
+{% block menu_items %}
+<li><a class="selection" href="{% url 'index' %}">Inicio</a></li>
+<li><a class="selection" href="{% url 'products' %}">Productos</a></li>
+<li><a class="selection" href="{% url 'travel'%}">Viajes y servicios</a></li>
+<li><a class="selection" href="{% url 'contact' %}">Contacto</a></li>
+<li><a class="selection" href="{% url 'legal' %}">Aviso Legal</a></li>
+{% endblock menu_items %}
+
+{% block menu_items_res %}
+<li><a class="selection" href="{% url 'index' %}">Inicio</a></li>
+<li><a class="selection" href="{% url 'products' %}">Productos</a></li>
+<li><a class="selection" href="{% url 'travel'%}">Viajes y servicios</a></li>
+<li><a class="selection" href="{% url 'contact' %}">Contacto</a></li>
+<li><a class="selection" href="{% url 'legal' %}">Aviso Legal</a></li>
+{% endblock menu_items_res %}
+
+{{product.name}}
+{{product.name}}
+
+{% block main %}
+<main class="product_page-main">
+    <div class="product_page-main-container main-container">
+        <div class="ref-image-container">
+            <img src="{{product.image.url}}" alt="{{product.image_alt}}">
+        </div>
+        <div class="text-container">
+            <div class="details-container">
+                <h2 class="product-title">{{product.name}}</h2>
+                <p class="price">{{product.price}}</p>
+                <p class="description">{{product.description}}</p>
+                <p class="link stars">
+                    Calificacion:
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </p>
+            </div>
+
+            <div class="payment-container">
+                <div class="payment-methods">
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-cc-diners-club"></i>
+                </div>
+                <form action="" class="payment-form">
+                    <label for="select">Cantidad: </label>
+                    <select name="select" class="amount-selector">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <label for="select">(6 disponibles)</label>
+                    <input type="submit" value="Comprar ahora" class="btn pay-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock main %}
+
+

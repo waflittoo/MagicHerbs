@@ -27,3 +27,14 @@ def legal(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def product_page(request, product_id):
+
+    product = Product.objects.get(id=product_id)
+
+    param = {
+        'product': product,
+    }
+    return render(request, 'product_page.html', param)
+
+
