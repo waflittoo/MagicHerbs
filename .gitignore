@@ -4,6 +4,12 @@
 ### Own Folders ###
 documents/
 images/
+staticfiles/img/travel/*.png
+staticfiles/img/travel/*.jpg
+staticfiles/img/travel/*.jpeg
+staticfiles/img/products/*.png
+staticfiles/img/products/*.jpg
+staticfiles/img/products/*.jpeg
 tmp.txt
 
 ### Python ###
