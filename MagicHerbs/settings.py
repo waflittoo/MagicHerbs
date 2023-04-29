@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'MagicHerbs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'magic_herbs_db',
-        'USER': 'waflittoo',
-        'PASSWORD': 'K]oc_91VIrIEzpaQ',
-        'HOST':'localhost',
+        'NAME': 'MagicHerbs$magic_herbs_db',
+        'USER': 'MagicHerbs',
+        'PASSWORD': 'DT^LJ*rWtI4pO',
+        'HOST':'MagicHerbs.mysql.pythonanywhere-services.com',
         'PORT':'3306',
     }
 }
