@@ -23,16 +23,21 @@
     <div class="products-main-container main-container">
         <div class="cards-container" id="cardsContainer">
             {% for product in product_list %}
-                <div class="card">
+                <a href="{% url 'product_page' product.id %}" class="card">
                     <div class="image-container">
                         <img src="{{product.image.url}}" alt="{{product.image_alt}}">
                     </div>
-                    <div class="text-container">
-                        <h2 class="title">{{product.name}}</h2>
-                        <h3 class="price">{{product.price}}</h3>
-                        <p class="desc">{{product.description}}</p>
+                    <div class="flex-container">
+                        <div class="text-container">
+                            <h2 class="title">{{product.name}}</h2>
+                            <h3 class="price">{{product.price}}</h3>
+                            <p class="desc">{{product.description}}</p>
+                        </div>
+                        {% comment %} <div class="btn-container">
+                            <a href="{% url 'product_page' product.id %}" class="get_btn">Comprar este producto</a>
+                        </div> {% endcomment %}
                     </div>
-                </div>
+                </a>
             {% endfor %}
         </div>
     </div>
