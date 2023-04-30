@@ -142,13 +142,6 @@ STATIC_URL = "/static/"
 MEDIA_URL = '/main_app/static/img/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'main_app/static/img')
 
-### ---------- ---------- HOSTING ZONE ---------- ---------- ###
-# STATIC_ROOT = '/home/MagicHerbs/MagicHerbs/static'
-# STATIC_URL = "/static/"
-
-# MEDIA_URL = '/main_app/static/img/'
-# MEDIA_ROOT = '/home/MagicHerbs/MagicHerbs/main_app/static/img'
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
