@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('DJANGO_SECRET')
+SECRET_KEY = 'django-insecure-7q52u6ypmg78k(#((gm94hydp)(y=-+yvux&-en77w8p!_e^et'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['MagicHerbs.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -89,10 +89,10 @@ WSGI_APPLICATION = 'MagicHerbs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST':os.getenv('DB_HOST'),
+        'NAME': 'magic_herbs_db',
+        'USER': 'waflittoo',
+        'PASSWORD': 'K]oc_91VIrIEzpaQ',
+        'HOST':'localhost',
         'PORT':'3306',
     }
 }
