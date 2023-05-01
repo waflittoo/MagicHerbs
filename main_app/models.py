@@ -12,7 +12,7 @@ class Product(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='products')
     image_alt = models.CharField(max_length=100)
-
+    available = models.IntegerField(default=1)
 
     def __str__(self):
         return self.name
