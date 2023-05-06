@@ -38,3 +38,11 @@ def product_page(request, product_id):
     }
 
     return render(request, 'product_page.html', param)
+
+def travel_page(request, travel_id):
+    travel_i = Travel.objects.get(id=travel_id)
+    param = {
+        'travel': travel_i,
+    }
+
+    return render(request, 'travel_page.html', param)

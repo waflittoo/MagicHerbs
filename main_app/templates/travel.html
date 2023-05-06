@@ -43,7 +43,7 @@
                         <h2>{{destiny.name}}</h2>
                         <h3>{{destiny.price}}</h3>
                         <p>{{destiny.short_description}}</p>
-                        <a class="link" href="#">¡Saber mas!</a>
+                        <a class="link" href="{% url 'travel_page' destiny.id %}">¡Saber mas!</a>
                     </div>
                 </div>
             {% endfor %}
