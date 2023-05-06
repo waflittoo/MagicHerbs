@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %}Nombre del producto{% endblock title %}
+{% block title %}{{product.name}}{% endblock title %}
 
 {% block menu_items %}
 <li><a class="selection" href="{% url 'index' %}">Inicio</a></li>
@@ -19,9 +19,6 @@
 <li><a class="selection" href="{% url 'contact' %}">Contacto</a></li>
 <li><a class="selection" href="{% url 'legal' %}">Aviso Legal</a></li>
 {% endblock menu_items_res %}
-
-{{product.name}}
-{{product.name}}
 
 {% block main %}
 <main class="product_page-main">
@@ -71,5 +68,3 @@
     </div>
 </main>
 {% endblock main %}
-
-
