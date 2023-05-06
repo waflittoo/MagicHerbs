@@ -3,6 +3,12 @@ from .models import Product, Travel
 # Create your views here.
 
 def index(request):
+    user_ip = request.META.get('HTTP_X_FORWARDED_FOR')
+    if user_ip:
+        ip = user_ip.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+        print(f"Direccion ip: {ip}")
     return render(request, 'index.html')
 
 
