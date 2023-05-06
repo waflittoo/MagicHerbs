@@ -8,7 +8,7 @@ def index(request):
         ip = user_ip.split(',')[0]
     else:
         ip = request.META.get('REMOTE_ADDR')
-        print(f"Direccion ip: {ip}")
+        print(f"Direccion ip: {ip}", flush=True)
     return render(request, 'index.html')
 
 
