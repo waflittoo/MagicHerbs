@@ -1,0 +1,90 @@
+body {
+    .container {
+        .travel_page-main {
+            width: 95%;
+            max-width: none;
+
+            .travel_page-main-container {
+                display: flex;
+                justify-content: space-around;
+
+                .ref-image-container {
+                    margin: 0 20px;
+                    width: 30%;
+
+                    img {
+                        width: 100%;
+                        border-radius: 5px;
+                        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.20);
+                        -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.20);
+                        -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.20);
+                    }
+                }
+
+                .text-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 50%;
+
+                    .details-container {
+                        .travel-title {
+                            font-size: 40px;
+                            margin-bottom: 10px;
+                        }
+
+                        .price {
+                            font-size: 25px;
+                            font-weight: 500;
+                            margin-bottom: 20px;
+                        }
+
+                        .description {
+                            font-size: 19px;
+                            margin-bottom: 10px;
+                        }
+
+                        .stars {
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    .payment-container {
+                        .payment-methods {
+                            margin-bottom: 20px;
+
+                            .fa-brands {
+                                font-size: 55px;
+                                color: $darkest_gray;
+                                font-style: italic;
+                            }
+                        }
+
+                        .payment-form {
+                            label {
+                                font-size: 18px;
+                            }
+
+                            .amount-selector {
+                                font-size: 18px;
+                                padding: 6px 10px;
+                                font-size: 17px;
+                                background: none;
+                                border: none;
+                                cursor: pointer;
+                                margin-bottom: 20px;
+                            }
+
+                            .btn {
+                                font-size: 18px;
+                                padding: 20px;
+                                width: 50%;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

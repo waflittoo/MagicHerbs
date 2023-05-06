@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %}{{product.name}}{% endblock title %}
+{% block title %}{{travel.name}}{% endblock title %}
 
 {% block menu_items %}
 <li><a class="selection" href="{% url 'index' %}">Inicio</a></li>
@@ -21,16 +21,16 @@
 {% endblock menu_items_res %}
 
 {% block main %}
-<main class="product_page-main">
-    <div class="product_page-main-container main-container">
+<main class="travel_page-main">
+    <div class="travel_page-main-container main-container">
         <div class="ref-image-container">
-            <img src="{{product.image.url}}" alt="{{product.image_alt}}">
+            <img src="{{travel.image.url}}" alt="{{travel.image_alt}}">
         </div>
         <div class="text-container">
             <div class="details-container">
-                <h2 class="product-title">{{product.name}}</h2>
-                <p class="price">{{product.price}}</p>
-                <p class="description">{{product.description}}</p>
+                <h2 class="travel-title">{{travel.name}}</h2>
+                <p class="price">{{travel.price}}</p>
+                <p class="description">{{travel.extended_description}}</p>
                 <p class="link stars">
                     Calificacion:
                     <i class="fa-solid fa-star"></i>
@@ -50,18 +50,7 @@
                     <i class="fa-brands fa-cc-diners-club"></i>
                 </div>
                 <form action="" class="payment-form">
-                    <label for="select">Cantidad: </label>
-                    <select name="select" class="amount-selector">
-                        {% for i in range %}
-                            {% if i|add:1 == 1 %}
-                                <option value="{{i|add:1}}" selected>{{i|add:1}}</option>
-                            {% else %}
-                                <option value="{{i|add:1}}">{{i|add:1}}</option>
-                            {% endif %}
-                        {% endfor %}
-                    </select>
-                    <label for="select">{{product.available}}</label>
-                    <input type="submit" value="Comprar ahora" class="btn pay-btn">
+                    <input type="submit" value="Reservar viaje" class="btn pay-btn">
                 </form>
             </div>
         </div>
