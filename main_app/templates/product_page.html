@@ -27,7 +27,7 @@
             <img src="{{product.image.url}}" alt="{{product.image_alt}}">
         </div>
         <div class="text-container">
-            <div class="details-container">
+            <section class="details-container">
                 <h2 class="product-title">{{product.name}}</h2>
                 <p class="price">{{product.price}}</p>
                 <p class="description">{{product.description}}</p>
@@ -39,9 +39,9 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                 </p>
-            </div>
+            </section>
 
-            <div class="payment-container">
+            <section class="payment-container">
                 <div class="payment-methods">
                     <i class="fa-brands fa-cc-mastercard"></i>
                     <i class="fa-brands fa-cc-visa"></i>
@@ -63,7 +63,7 @@
                     <label for="select">{{product.available}}</label>
                     <input type="submit" value="Comprar ahora" class="btn pay-btn">
                 </form>
-            </div>
+            </section>
         </div>
     </div>
 </main>
