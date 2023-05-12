@@ -23,7 +23,7 @@
 {% block main %}
 <main class="index-main">
     <div class="index-main-container main-container">
-        <div class="index-cards">
+        <article class="index-cards">
             <div class="image-container">
                 <img src="{% static 'img/About.jpg' %}" alt="Dos personas dandose la mano" class="image">
             </div>
@@ -36,8 +36,8 @@
                     ¡O simplemente entretenerse!
                 </p>
             </div>
-        </div>
-        <div class="index-cards">
+        </article>
+        <article class="index-cards">
             <div class="image-container">
                 <img src="{% static 'img/Products.jpg' %}" alt="Dos personas dandose la mano" class="image">
             </div>
@@ -57,7 +57,7 @@
                 </p>
                 <a class="text link" href="{% url 'products' %}">¡Y mucho más!</a>
             </div>
-        </div>
+        </article>
     </div>
 </main>
 {% endblock main %}

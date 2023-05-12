@@ -27,7 +27,6 @@
     <div class="container">
         <header>
             <div class="header-container">
-                
                 <div class="title-container">
                     <div class="title">
                         <a class="link" href="{% url 'index' %}"><h1>Magic Herbs</h1></a>
@@ -39,7 +38,7 @@
                     <img src="{% static 'img/MagicHerb.png' %}" alt="Magic Herbs Logo">
                 </div>
             </div>
-            <div class="menu-container">
+            <nav class="menu-container">
                 <div class="menu-header-container">
                     <div class="menu-btn" id="menuBtn">
                         <div class="menu-style"></div>
@@ -58,14 +57,14 @@
                     {% block menu_items_res %}
                     {% endblock menu_items_res %}
                 </ul>
-            </div>
+            </nav>
         </header>
 
         {% block main %}
         {% endblock main %}
         
         <footer>
-            <div class="footer-container">
+            <section class="footer-container">
                 <div class="team">
                     <p>Proyecto llevado a cabo por:<br><a class="link" href="https://youtu.be/dQw4w9WgXcQ">iAndress</a>, <a class="link" href="https://github.com/waflittoo/MagicHerbs">Waflittoo</a> & <a class="link" href="https://chromedino.com/">WedNiasirikii</a></p>
                     <p>Mencion especial: <span class="link">Maxi(Panqueque)</span></p>
@@ -76,7 +75,7 @@
                     <br>
                 </div>
                 <a href="{% url 'legal' %}" class="legal link" target="_blank">Aviso legal</a>
-            </div>
+            </section>
         </footer>
         <script src="{% static 'js/headerMenu.js' %}"></script>
     </div>
