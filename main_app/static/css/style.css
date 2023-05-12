@@ -668,6 +668,23 @@ body .container .legal-main p:last-child {
     width: 100%;
   }
 }
+@media screen and (max-width: 800px) {
+  body .container .product_page-main .product_page-main-container {
+    flex-direction: column;
+  }
+  body .container .product_page-main .product_page-main-container .ref-image-container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  body .container .product_page-main .product_page-main-container .text-container {
+    margin: auto;
+    width: 90%;
+  }
+  body .container .product_page-main .product_page-main-container .text-container .payment-container .payment-methods .fa-brands {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 950px) {
   body .container .contact-main .form-container form {
     width: 80%;
