@@ -1,20 +1,23 @@
 @media screen and (max-width:800px) {
-    body{
-        .container{
-            .product_page-main{
-                .product_page-main-container{
+    body {
+        .container {
+            .product_page-main {
+                .product_page-main-container {
                     flex-direction: column;
-                    .ref-image-container{
+
+                    .ref-image-container {
                         width: 80%;
                         margin: auto;
                         margin-bottom: 20px;
                     }
-                    .text-container{
+
+                    .text-container {
                         margin: auto;
                         width: 90%;
-                        .payment-container{
-                            .payment-methods{
-                                .fa-brands{
+
+                        .payment-container {
+                            .payment-methods {
+                                .fa-brands {
                                     font-size: 30px;
                                 }
                             }
