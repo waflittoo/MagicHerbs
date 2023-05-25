@@ -1,5 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Product, Travel
+from .forms import ContactForm
+
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+
 # Create your views here.
 
 def index(request):
@@ -27,7 +32,30 @@ def legal(request):
 
 
 def contact(request):
-    return render(request, 'contact.html')
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            print('valid mail')
+
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            message = form.cleaned_data['message']
+
+            html = render_to_string('./emails/email_template.html', {
+                'name': name,
+                'email': email,
+                'message': message,
+            })
+
+            send_mail('Contact Form', 'Contact Form', 'magic.herbs.contacto@gmail.com', ['ivan.prueba.python@gmail.com'], html_message=html)
+            return redirect('contact')
+    else:
+        form = ContactForm()
+
+    param = {
+        'form': form,
+    }
+    return render(request, 'contact.html', param)
 
 
 def product_page(request, product_id):
@@ -46,3 +74,19 @@ def travel_page(request, travel_id):
     }
 
     return render(request, 'travel_page.html', param)
+
+def payments_page(request, product_type, product_id):
+
+    render_page = 'payment_pages.html'
+    if product_type == 'travel':
+        render_page = 'payment_travel.html'
+        param ={
+            'prod_id': product_id,
+            'month': range(12),
+            'year': range(10),
+        }
+    elif product_type == 'item':
+        render_page = 'payment_item.html'
+
+
+    return render(request, render_page, param)

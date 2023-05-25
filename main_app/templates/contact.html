@@ -24,20 +24,24 @@
     <div class="contact-main-container main-container">
         <div class="form-container">
             <form action="" method="post">
+                {% csrf_token %}
                 <div class="form-group">
                     <div class="group user-email-group">
-                        <label for="userName" class="label">Nombre:</label>
+                        {{form.as_p}}
+                        {% comment %} {{form.message}} {% endcomment %}
+                        {% comment %} <label for="userName" class="label">Nombre:</label>
                         <input type="text" name="userName" id="userName" placeholder="Nombre" class="input">
                         <label for="email" class="label">Correo:</label>
-                        <input type="email" name="email" id="email" placeholder="Correo" class="input">
+                        <input type="email" name="email" id="email" placeholder="Correo" class="input"> {% endcomment %}
                     </div>
                     <div class="group message-group">
-                        <label for="message" class="label">Mensaje:</label>
-                        <textarea name="message" id="message" placeholder="Mensaje" class="input"></textarea>
+                        {% comment %} <label for="message" class="label">Mensaje:</label>
+                        <textarea name="message" id="message" placeholder="Mensaje" class="input"></textarea> {% endcomment %}
                     </div>
                 </div>
                 <div class="btn-group">
-                    <input type="submit" value="Enviar" class="btn">
+                    <button class="btn">Submit</button>
+                    {% comment %} <input type="submit" value="Enviar" class="btn"> {% endcomment %}
                 </div>
             </form>
             <div class="text">
