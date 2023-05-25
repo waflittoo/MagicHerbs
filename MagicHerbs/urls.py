@@ -28,6 +28,7 @@ urlpatterns = [
     path('contact', main_views.contact, name='contact'),
     path('product_page/<int:product_id>', main_views.product_page, name='product_page'),
     path('travel_page/<int:travel_id>', main_views.travel_page, name='travel_page'),
+    path('payment/<str:product_type>/<int:product_id>', main_views.payments_page, name='payments_page'),
 ]
 
 if settings.DEBUG:
