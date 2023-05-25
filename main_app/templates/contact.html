@@ -27,7 +27,6 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <div class="group user-email-group">
-                        {% comment %} {{form.message}} {% endcomment %}
                         <label for="userName" class="label">Nombre:</label>
                         <input type="text" name="{{form.name.name}}" id="userName" placeholder="Nombre" class="input">
                         <label for="email" class="label">Correo:</label>
@@ -40,13 +39,11 @@
                     </div>
                 </div>
                 <div class="btn-group">
-                    <button class="btn">Submit</button>
-                    {% comment %} <input type="submit" value="Enviar" class="btn"> {% endcomment %}
+                    <input type="submit" value="Enviar" class="btn">
                 </div>
             </form>
             <div class="text">
                 <p>Nos pondremos en contacto contigo lo mas pronto posible!</p>
-                <h6>(<i>Este no es un formulario real, Por favor abstenerse de llenarlo</i>)</h6>
             </div>
         </div>
     </div>
