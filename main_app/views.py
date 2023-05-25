@@ -47,7 +47,7 @@ def contact(request):
                 'message': message,
             })
 
-            send_mail('Contact Form', 'Contact Form', 'magic.herbs.contacto@gmail.com', ['ivan.prueba.python@gmail.com'], html_message=html)
+            send_mail(f'Correo contacto de {name}', 'Contact Form', 'magic.herbs.contacto@gmail.com', ['magic.herbs.contacto@gmail.com'], html_message=html)
             return redirect('contact')
     else:
         form = ContactForm()

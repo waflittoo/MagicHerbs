@@ -27,16 +27,16 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <div class="group user-email-group">
-                        {{form.as_p}}
                         {% comment %} {{form.message}} {% endcomment %}
-                        {% comment %} <label for="userName" class="label">Nombre:</label>
-                        <input type="text" name="userName" id="userName" placeholder="Nombre" class="input">
+                        <label for="userName" class="label">Nombre:</label>
+                        <input type="text" name="{{form.name.name}}" id="userName" placeholder="Nombre" class="input">
                         <label for="email" class="label">Correo:</label>
-                        <input type="email" name="email" id="email" placeholder="Correo" class="input"> {% endcomment %}
+                        <input type="email" name="{{form.email.name}}" id="email" placeholder="Correo" class="input">
+
                     </div>
                     <div class="group message-group">
-                        {% comment %} <label for="message" class="label">Mensaje:</label>
-                        <textarea name="message" id="message" placeholder="Mensaje" class="input"></textarea> {% endcomment %}
+                        <label for="message" class="label">Mensaje:</label>
+                        <textarea name="{{form.message.name}}" id="message" placeholder="Mensaje" class="input"></textarea>
                     </div>
                 </div>
                 <div class="btn-group">
