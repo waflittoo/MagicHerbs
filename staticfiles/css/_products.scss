@@ -10,7 +10,7 @@ body {
                     .card {
                         padding: 20px;
                         width: 355px;
-                        background: $light_gray;
+                        background: $l_theme_secondary;
                         border-radius: 5px;
                         margin: 20px;
                         display: flex;
@@ -22,7 +22,7 @@ body {
                         .image-container {
                             flex: 1;
                             margin-bottom: 40px;
-                            background: $dark_gray;
+                            background: $l_theme_dark_secondary;
 
                             img {
                                 width: 100%;
@@ -34,6 +34,7 @@ body {
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
+
                             .text-container {
                                 .price {
                                     margin-bottom: 20px;
@@ -43,14 +44,38 @@ body {
                             .btn-container {
                                 .get_btn {
                                     display: inline-block;
-                                    background: $dark_green;
-                                    color: $white;
+                                    background: $l_theme_dark_primary;
+                                    color: $text;
                                     margin: 20px 0;
                                     margin-bottom: 0;
                                     padding: 15px 20px;
                                     border-radius: 5px;
                                     text-decoration: none;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.dark_mode {
+    .container {
+        .products-main {
+            .main-container {
+                .cards-container {
+                    .card {
+                        background: $d_theme_light_bg;
+
+                        .image-container {
+                            background: $d_theme_background;
+                        }
+
+                        .flex-container {
+                            .text-container {
+                                color: $text;
                             }
                         }
                     }

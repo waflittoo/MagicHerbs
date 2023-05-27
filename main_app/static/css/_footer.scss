@@ -1,7 +1,7 @@
 body {
     .container {
         footer {
-            background: $darkest_gray;
+            background: $l_theme_darkest_secondary;
             padding: 50px;
             position: absolute;
             bottom: 0;
@@ -14,7 +14,7 @@ body {
                 justify-content: space-between;
                 height: 100px;
                 align-items: center;
-                color: $white;
+                color: $text;
 
                 .f-col {
                     display: flex;
@@ -28,13 +28,27 @@ body {
                 }
 
                 .link {
-                    color: $green;
+                    color: $l_theme_primary;
                     font-weight: 700;
                     text-decoration: underline;
                 }
 
                 a.legal {
                     font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+body.dark_mode {
+    .container {
+        footer {
+            background: $d_theme_light_bg;
+
+            .footer-container {
+                .link {
+                    color: $d_theme_accent;
                 }
             }
         }

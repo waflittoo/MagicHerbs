@@ -1,11 +1,16 @@
-$light_green: #52B532;
-$green: #50A112;
-$dark_green: #265501;
-$light_gray: #DADADA;
-$dark_gray: #B0B0B0;
-$darkest_gray: #1E1E1E;
-$black: #000;
-$white: #fff;
+$l_theme_primary: #50A112;
+$l_theme_dark_primary: #265501;
+$l_theme_secondary: #DADADA;
+$l_theme_dark_secondary: #B0B0B0;
+$l_theme_darkest_secondary: #1E1E1E;
+
+$d_theme_primary: #50aa18;
+$d_theme_accent: #658b13;
+$d_theme_secondary: #c2cdd0;
+$d_theme_dark_acc: #293b1d;
+$d_theme_background: #1f1f1f;
+$d_theme_light_bg: #282829;
+$text: #dadee7;
 
 
 * {
@@ -20,9 +25,18 @@ $white: #fff;
     text-decoration: none;
 }
 
+.input {
+    padding: 10px 10px;
+    max-width: 300px;
+    border-radius: 5px;
+    outline: 2px solid $d_theme_primary;
+    border: none;
+    display: inline-block;
+}
+
 .link {
     font-weight: 700;
-    color: $green;
+    color: $l_theme_primary;
     cursor: pointer;
 }
 
@@ -44,9 +58,13 @@ html {
             }
         }
     }
+
+    body.dark_mode {
+        background: $d_theme_background;
+    }
 }
 
-a{
+a {
     color: #000;
     text-decoration: none;
 }
@@ -54,8 +72,8 @@ a{
 .btn {
     padding: 10px 25px;
     border-radius: 5px;
-    background: $dark_green;
-    color: $white;
+    background: $d_theme_primary;
+    color: $text;
     border: none;
     cursor: pointer;
 }
@@ -71,6 +89,7 @@ a{
 @import "traveling";
 @import "travel_page";
 @import "contact_form";
+@import "payments_page";
 @import "footer";
 @import "legal";
 

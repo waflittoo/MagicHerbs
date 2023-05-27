@@ -33,7 +33,7 @@ body {
                     .destiny {
                         display: flex;
                         justify-content: space-between;
-                        background: $light_gray;
+                        background: $l_theme_secondary;
                         margin: 20px 0;
                         padding: 20px;
                         border-radius: 5px;
@@ -44,7 +44,7 @@ body {
                             height: 300px;
                             margin-right: 40px;
                             padding: 10px;
-                            background: $dark_gray;
+                            background: $l_theme_dark_secondary;
 
                             img {
                                 border-radius: 5px;
@@ -72,7 +72,47 @@ body {
 
                             a.link {
                                 font-weight: 700;
-                                color: $dark_green;
+                                color: $l_theme_dark_primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.dark_mode {
+    .container {
+        .travel-main {
+            .travel-main-container {
+                .title-container {
+                    color: $text;
+
+                    h1 {
+                        color: $d_theme_accent;
+                    }
+                }
+
+                .destiny-cards {
+                    color: $d_theme_accent;
+
+                    .destiny {
+                        background: $d_theme_light_bg;
+
+                        .image-container {
+                            background: $d_theme_accent;
+                        }
+
+                        .text-container {
+                            color: $text;
+
+                            h2 {
+                                color: $d_theme_accent;
+                            }
+
+                            a.link {
+                                color: $d_theme_accent;
                             }
                         }
                     }

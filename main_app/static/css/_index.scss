@@ -11,16 +11,17 @@ body {
                     width: 80%;
                     margin: 40px auto;
                     display: flex;
-                    background: $light_gray;
+                    background: $l_theme_secondary;
                     margin-bottom: 40px;
                     padding: 20px;
                     border-radius: 5px;
+                    color: $l_theme_darkest_secondary;
 
                     .image-container {
                         margin-right: 20px;
 
                         .image {
-                            border: 10px solid $dark_gray;
+                            border: 10px solid $l_theme_dark_secondary;
                             border-radius: 5px;
                             width: 100%;
                             max-width: 250px;
@@ -52,10 +53,38 @@ body {
                         }
 
                         a.text.link {
-                            color: $dark_green;
+                            color: $l_theme_dark_primary;
                             font-weight: 700;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+body.dark_mode {
+    .container {
+        .index-main-container {
+            .index-cards {
+                background: $d_theme_light_bg;
+                color: $text;
+
+                .image-container {
+                    .image {
+                        border-color: $d_theme_accent;
+                    }
+                }
+
+                .text-container {
+
+                    h3,
+                    .title,
+                    a.text.link,
+                    .text .sub_title {
+                        color: $d_theme_accent;
+                    }
+
                 }
             }
         }
